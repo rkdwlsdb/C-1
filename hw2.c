@@ -10,7 +10,7 @@ int main(void)
     scanf("%lf", &km);
 
     mile = km / 1.609;
-    printf("%.1lf km is equl to %.1lf miles.\n", km, mile);
+    printf("%.1lf km is equal to %.1lf miles.\n", km, mile);
     
     return 0;
 }
