@@ -2,12 +2,9 @@
 
 int main(void)
 {
-    int color;
-    int R, G, B;
-    int change;
-    int xR, xG, xB;
+    int color, R, G, B;
+    int change, xR, xG, xB;
     int value;
-
     char channel;
     char answer;
 
@@ -77,22 +74,13 @@ int main(void)
             }
         }
         
-        // printf("%x \n", R);
         xR = R + 0x000000;
-        // printf("%x\n", xR);
         xR = xR << 16;
-        // printf("%x\n", xR);
-        
         xG = G + 0x000000;
         xG = xG << 8;
-        // printf("%x\n", xG);
-        
         xB = B + 0x000000;
         xB = xB << 0;
-        // printf("%x\n", xB);
         value = xR + xG + xB;
-        // printf("0x%06X", value);
-
         printf("조정된 컬러의 R,G,B 값은 (%d, %d, %d)이고, 이는 0x%06X로 저장됩니다. \n", R, G, B, value);
         
         printf("계속 컬러를 조정하시겠습니까? (y/n) ");
